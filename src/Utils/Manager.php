@@ -8,7 +8,7 @@ class Manager
     {
         try{
             if(self::$pdo == null){
-                self::$pdo = new PDO("mysql:host=localhost;dbname=sushilang;charset=utf8mb4",'root', null, [
+                self::$pdo = new PDO("mysql:host=127.0.0.1;dbname=projetphpdb;charset=utf8mb4",'root', null, [
                     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
                 ]);
             }
